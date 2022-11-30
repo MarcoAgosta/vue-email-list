@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
             listaEmail: [],
-
+            listaPronta: false,
         }
     },
 
@@ -16,6 +16,10 @@ createApp({
                     .then((risposta) => {
                         console.log(risposta);
                         this.listaEmail.push(risposta);
+                        if (this.listaEmail.length == 10){
+                            console.log(this.listaEmail.length)
+                            this.listaPronta=true;
+                        }
                     })};
             },
 
