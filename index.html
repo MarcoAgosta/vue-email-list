@@ -11,6 +11,18 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
+    <div id="app">
+        <div class="container">
+            <h1 class="text-center mt-5">I 10 INDIRIZZI E-MAIL</h1>
+            <div class="mt-3">
+                <ul class="list-group text-center">
+                    <li class="list-group-item"
+                    v-for="elemento in listaEmail">
+                    {{elemento.data.response}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="JS/main.js"></script>
 </body>
 </html>
